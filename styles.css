@@ -1,0 +1,83 @@
+:root{
+    --primary-dark:#ff0054;
+    --primary-color:#ffffff;
+}
+body{
+    background-image:url("photo/bday.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:var(--primary-dark);
+    font-family:'Roboto', sans-serif;
+    margin:0px;
+}
+
+h1{
+    font-size:2.5rem;
+    margin-top:2rem;
+    text-align:center;
+}
+
+.container{
+    color:var(--primary-color);
+    font-weight:600;
+    margin:1rem 2rem 1rem;
+    padding:2rem;
+    width:400px;
+}
+
+input, label{
+    border-radius:10px;
+    border-color:#90e0ef;
+    display: block;
+    font-size:1.5rem;
+}
+
+input{
+    font-size:1rem;
+    margin: 2rem 0rem 2rem; 
+    padding:1rem;
+    width: 100%;
+}
+
+#check-number{
+    background-color:var(--primary-color);
+    border-color:var(--primary-dark);
+    border-radius:0.3rem;
+    border-width:medium;
+    color:var(--primary-dark);
+    cursor:pointer;
+    display: block;
+    font-size:1rem;
+    margin: auto;
+    padding:0.5rem;
+}
+#check-number:hover{
+    background-color: var(--primary-dark);
+    color:var(--primary-color);
+}
+
+#message{
+    color:var(--primary-color);
+    font-size:1.5rem;
+    font-weight:600;
+    margin:1rem;
+    padding:1rem;    
+}
+
+#note{
+    color:var(--primary-color);
+    font-size:1.2rem;
+    text-align: left;
+}
+
+footer{
+    color:var(--primary-dark);
+    font-size:1.2rem;
+    font-weight:900;
+    margin:1rem; 
+    text-align:center;
+}
+.footer-icon{
+    margin:15px;
+    color:var(--primary-dark);
+}
