@@ -22,7 +22,7 @@
             <label for ="date-of-birth">Date of Birth:</label>
             <input id="date-of-birth" type="date" type="hidden" >
             <label for="lucky-number">Your lucky number:</label>
-            <input id="lucky-number" type="number">
+            <input id="lucky-number" type="number" min=1 oninput="validity.valid||(value='');">
             <button id="check-number">Check number</button>
             <div id="message" disabled></div>
         </div>
