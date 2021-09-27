@@ -9,17 +9,14 @@ function compareValues(sum, luckyNumber){
         message.innerText = "Sorry! Your birthdate is not lucky🙁";
     }
 }
-
 function checkBirthDateIsLucky(){
-     const dob = dateOfBirth.value;
-     const sum = calculateSum(dob);
-     if(sum&&dob){
-     compareValues(sum,luckyNumber.value);
-     }
-     else {
-     message.innerText="Please enter both the fields😤";
-     }
- }
+    const dob = dateOfBirth.value;
+    const sum = calculateSum(dob);
+    if(dob=="" || luckyNumber.value==""){
+        message.innerText = "Please enter both the fields 😤";
+    }else 
+        compareValues(sum, luckyNumber.value);
+}
 
 function calculateSum(dob){
      dob = dob.replaceAll("-","");
