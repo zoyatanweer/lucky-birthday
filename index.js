@@ -2,14 +2,14 @@ const dateOfBirth = document.querySelector("#date-of-birth");
 const luckyNumber = document.querySelector("#lucky-number");
 const checkNumberButton =document.querySelector("#check-number");
 const message = document.querySelector("#message");
-function compareValues(sum, luckyNumber){
+const compareValues = (sum, luckyNumber) => {
     if(sum%luckyNumber===0){
        message.innerText = "Your birthdate is lucky!🤩";
     }else{
         message.innerText = "Sorry! Your birthdate is not lucky🙁";
     }
 }
-function checkBirthDateIsLucky(){
+const checkBirthDateIsLucky = () => {
     const dob = dateOfBirth.value;
     const sum = calculateSum(dob);
     if(dob=="" || luckyNumber.value==""){
@@ -18,7 +18,7 @@ function checkBirthDateIsLucky(){
         compareValues(sum, luckyNumber.value);
 }
 
-function calculateSum(dob){
+const calculateSum = (dob) => {
      dob = dob.replaceAll("-","");
      let sum=0;
      for(let i =0; i<dob.length ; i++){
